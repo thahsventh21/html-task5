@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Task 5</title>
+</head>
+<style type="text/css">
+    table,td{
+        border:1px solid black;
+        border-collapse: collapse;
+        width: 80%;
+    }
+
+    input[type="text"],input[type="email"],input[type="password"],input[type="number"]{
+        width: 96%;
+    }
+
+    h1{
+        color: blue;
+    }
+    
+</style>
+<body>
+
+    <center><h1>Registration Form</h1>
+        <form>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="first-name" id="first-name"/></td> 
+                </tr>
+
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="last-name" id="last-name"/></td>
+                </tr>
+                
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" id="email"/></td>
+                </tr>
+                
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" id="password"/></td>
+                </tr>
+
+                <tr>
+                    <td>Re-enter Password</td>
+                    <td><input type="password" name="re-password" id="re-password"/></td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male"/>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female"/>
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" name="age" id="age"/></td>
+                </tr>
+
+                <tr>
+                    <td>Phone Number</td>
+                    <td><input type="number" name="phone-number" id="ph-num"/></td>
+                </tr>
+
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="address" id="address" cols="20" rows="2"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>State</td>
+                    <td><input type="text" name="state" id="state"/></td>
+                </tr>
+
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="selected" disabled selected>Choose your country</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Languages Known</td>
+                    <td>
+                        <input type="checkbox" name="language" name="english" id="english">
+                        <label for="english">English</label>
+
+                        <input type="checkbox" name="language" name="kannada" id="kannada">
+                        <label for="kannada">Kannada</label>
+
+                        <input type="checkbox" name="language" name="hindi" id="hindi">
+                        <label for="hindi">Hindi</label>
+
+                        <input type="checkbox" name="language" name="telugu" id="telugu">
+                        <label for="telugu">Telugu</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="checkbox" name="declaration" id="declaration">Herby I declare all the given details are true.</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align: end;">Log in to <a href="https://ethnus.com/">Ethnus</a> website</td>
+                </tr>
+
+
+            </table>
+        </form>
+    </center>
+</body>
+</html>
